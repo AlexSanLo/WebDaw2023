@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/Hollow.png" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-azul-o text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+            <div id="parrafos" class="py-3">
+                <h2 class="text-center">Enlaces</h2>              
+                <h1>Enlaces y los tipos que puede haber</h1>
+                <h2>Para página creada por nosotros</h2>
+                <p><a href="parrafos.html"><spam class="bg-azul-c">Ir a párrafos</spam></a>, Para crear un enlace a una pagina que hayamos creado se utiliza la etiqueta <"a"> dentro del parrafo o encabezado (<"p"> o <"h1">) y dentro de los signos de mayor y menor tiene que existir href= "Enlace de la pagina" y mas tarde el nombre que se le quiera dar al enlace. Recuerdo que para cambiar el color del enlace "Ir a párrafos" tiene que estar dentro de la etiqueta spam acompañada del color que se le quiera dar.</p>
+                <h2>Enlace a una página de Internet</h2>
+                <p><a href="https://www.youtube.com/"><spam class="bg-rosa-r">Ir a Youtube,</spam></a> Para crear un enlace a una pagina que ya exista en internet se utiliza la misma etiqueta <"a"> pero dentro de estas etiquetas tendría que estar el enlace a la pagina la cual queremos acceder.</p>
+                <h2>Crear un enlace que cree otra pestaña</h2>
+                <p><a class="bg-verde-v" target="_blank" href="http://www.ies-azarquiel.es">Ir a la página del Azarquiel</a> Para crear un enlace que te lleve a otra pestaña antes de la etiqueta href= "Enlace de la pagina", hay que poner la etiqueta de target=_"blank" y seguido ya poner la etiqueta href con su enlace.</p>
+                <h2>Enlace a programa de JavaScript</h2>
+                <p><a class="bg-rojo-r" href=" javascript: alert('Enlace para un programa javascript')">Pulsa aqui para ejecutar un programa Javascript.</a> Para usar un enlace a un programa javascript dentro de la etiqueta <"a"> habría que utilizar href=" javascript: alert('Texto que quieras que aparezca en el programa')"</p>
+                <h2>Enlace a un Email</h2>
+                <p><a class="bg-naranja-n" href="mailto:alex2005olmo@gmail.com">Pulsa aqui para mandar un gmail a la cuenta asignada.</a> Para realizar un enlace que mande un correo, volvemos a utilizar la etiqueta <"a"> y dentro de ella habra que poner href=mailto:"CORREO ELECTRONICO AL QUE DESEES ENVIARLE UN EMAIL".</p>
+                <h2>Enlace dentro de una imagen</h2>
+                <p>Para insertar una imagen se utiliza img src= Enlace de la foto y para ajustarla se utiliza la etiqueta width=Valor. Entonces para poner que una foto sea un enlace: habria que utilizar etiqueta target, seguido de la etiqueta href=Enlace Pagina (todo esto en la etiqueta <"a">) y en otra etiqueta utilizar img para que el enlace sea la foto.</p><p class="text-center"><a target="_blank" href="https://www.instagram.com/?hl=es"><img src="img/Instagram.jpg" alt="Instagram" width="100"></a><br>Instagram</p>
+            </div>
+            </div>
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3">&copy; Alejandro Sánchez López</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

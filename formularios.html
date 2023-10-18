@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/Hollow.png" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-azul-o text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="parrafos" class="py-3">
+                    <h2 class="text-center">FORMULARIOS</h2>
+                    <p class="text-center">Todo lo que suceda en un formulario debe ir dentro de las etiquetas de form</p>                   
+                    <fieldset class="bg-fieldsetBlanco">
+                        <legend><h2>Crear botones de usuarios y contraseña</h2></legend>
+                    <form action="Inventada.php" method="post">
+                        <p>Usuario</span> <input type="text" name="Usuario" id=""></p>
+                        <p>Contraseña</span> <input type="password" name="Contraseña" id="">
+                        </p>
+                        <p><input class="bg-BaseD" type="submit" value="LOGIN"></p>
+                        <p>Para realizar un formulario como el que se observa arriba primero hay que crear una form
+                            post, mas tarde añadir los botones input según lo que queramos del ususario, por ejemplo
+                            usuario lleva un input de tipo text y la contraseña lleva un input de tipo password.</p>
+                        </fieldset>
+
+                    </form>                   
+                    <form action="Inventada.php" method="post">
+                        <fieldset class= "bg-fieldsetVerde">
+                            <legend><strong><h2>FORMULARIO DE REGISTRO</h2></strong></legend>
+                        <p><strong>Usuario</strong> <input type="text" name="Usuario" id=""></p>
+                        <p><strong>Contraseña</strong> <input type="password" name="Contraseña" id=""></p>
+                        <p><strong>Fecha nacimiento</strong> (tag select) y dentro de ella (option value="" y el nombre
+                            de la opcion)
+                            <br>
+                            <select name="dia" id="">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <select name="mes" id="">
+                                <option value="1">Enero</option>
+                                <option value="2">Febrero</option>
+                                <option value="3">Marzo</option>
+                                <option value="4">Abril</option>
+                                <option value="5">Mayo</option>
+                                <option value="6">Junio</option>
+                                <option value="7">Julio</option>
+                                <option value="8">Agosto</option>
+                                <option value="9">Septiembre</option>
+                                <option value="10">Octubre</option>
+                                <option value="11">Noviembre</option>
+                                <option value="12">Diciembre</option>
+                            </select>
+                            <select name="año" id="">
+                                <option value="1">1995</option>
+                                <option value="2">1996</option>
+                                <option value="3">1997</option>
+                                <option value="4">1998</option>
+                                <option value="5">1999</option>
+                                <option value="6">2000</option>
+                                <option value="7">2001</option>
+                                <option value="8">2002</option>
+                                <option value="9">2003</option>
+                                <option value="10">2004</option>
+                                <option value="11">2005</option>
+                            </select>
+
+                        </p>
+                        <p><strong>Comentarios</strong> (tag textarea) (Si se quiere ajustar el tamaño se puede hacer)
+                            <br><textarea name="Comentarios" id="" cols="50" rows="4"></textarea></p>
+
+                        <p><strong>Aficiones</strong> (tag input type checkbox)</p>
+                        <input type="checkbox" name="Cine" id=""> Cine
+                        <br> <input type="checkbox" name="Deportes" id=""> Deportes
+                        <br> <input type="checkbox" name="Viajar" id=""> Viajar
+                        <br> <input type="checkbox" name="Leer" id=""> Leer
+
+                        <p><strong>Estado civil </strong>(tag input type radio) (Mismo valor en name para que solo se
+                            pueda elegir una)</p>
+                        <input type="radio" name="ec" id=""> Casado/a <br>
+                        <input type="radio" name="ec" id=""> Soltero/a <br>
+                        <input type="radio" name="ec" id=""> Viudo/a <br>
+                        <input type="radio" name="ec" id=""> Otros <br>
+
+                        <p><strong>Provincia </strong> (tag "select" y dentro multiple size "Las opciones que quieres
+                            que haya")</p>
+                        <select name="provincia" id="" multiple size="5">
+                            <option value="1">Albacete</option>
+                            <option value="2">Toledo</option>
+                            <option value="3">Ciudad Real</option>
+                            <option value="4">Cuenca</option>
+                            <option value="5">Guadalajara</option>
+                        </select>
+
+                        <p><strong>Foto: </strong> (tag input type file) <input type="file" name="Foto" id=""></p>
+                    </fieldset>
+                    </form>
+
+                    <form action="Inventada.php" method="post" class="form-html5">
+                        <fieldset class= "bg-fieldsetGris" >
+                            <legend><h2>FORMULARIO CON ELEMENTOS HMTL5</h2></legend>
+                            <p><strong>En este formulario se utilizaran una gran variedad de tipos de inputs que existen, como: input=color,   input=date,   input=range y asi con cada uno del formulario.</strong></p>
+                            <p><label for=""><strong>Color: </strong></label> <input type="color" name="color" id=""></p>
+                            <p><label for=""><strong>Date: </strong></label> <input type="datetime" name="Date" id=""></p>
+                            <p><label for=""><strong>Datetime (No funciona en Chrome): </strong> </label> <input type="datetime-local" name="dtl" id=""></p>
+                            <p><label for=""><strong>Email: </label></strong><input type="email" name="email" id=""></p>
+                            <p><label for=""><strong>Month: </strong></label><input type="month" name="month" id=""></p>
+                            <p><label for=""><strong>Number: </strong></label><input type="number" name="number" id=""></p>
+                            <p><label for=""><strong>Range: </strong></label><input type="range" name="" id=""></p>
+                            <p><label for=""><strong>Tel (No funciona en Chrome): </strong></label><input type="tel" name="tel" id=""></p>
+                            <p><label for=""><strong>Time: </strong></label><input type="time" name="time" id=""></p>
+                            <p><label for=""><strong>Url: </strong></label><input type="url" name="url" id=""></p>
+                            <p><label for=""><strong>Week: </strong></label><input type="week" name="week" id=""></p>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3">&copy; Alejandro Sánchez López</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>
