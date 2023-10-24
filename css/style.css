@@ -161,6 +161,9 @@ a {
 .bg-blanco-b {
     background-color: rgb(240, 249, 252);
 }
+.bg-gris-b {
+    background-color: rgba(240, 249, 252, 0.356);
+}
 .bg-morado-m {
     background-color: rgba(194, 5, 178, 0.76);
 }
